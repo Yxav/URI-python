@@ -2,7 +2,6 @@ def media(value, peso):
     nota = (value/10)*peso
     return nota
 
-
 notas = input().split(" ")
 n1,n2,n3,n4 = notas
 
@@ -25,7 +24,7 @@ elif media_total >= 5 and media_total<=6.9:
     exame = float(input())
     print("Nota do exame %0.1f" %exame)
     media_nova = (media_total + exame)/2
-    if media_nova > 5:
+    if media_nova >= 5:
         print("Aluno aprovado.")
         print("Media final: %0.1f" %media_nova)
     else:
