@@ -1,34 +1,34 @@
-value = input().split()
-a,b,c = value
-
+x = input().split()
+a, b, c = x
 a = int(a)
 b = int(b)
 c = int(c)
 
-if a>b and a>c:
+
+if a > b and a > c:
     d = a
-    if b>c:
+    if b > c:
         e = b
         f = c
-
-if b>a and b>c:
+    else:
+        e = c
+        f = b
+if b > a and b > c:
     d = b
-    if a>c:
+    if a > c:
         e = a
         f = c
     else:
         e = c
         f = a
-
-if c>a and c>b:
+if c > a and c > b:
     d = c
     if a > b:
         e = a
         f = b
     else:
-        e = b
         f = a
-
+        e = b
 print(f)
 print(e)
 print(d)
